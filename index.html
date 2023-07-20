@@ -5,100 +5,29 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
 <body>
-    <nav class="navbar navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="#">Raynhardt Van Zyl</a>
+            <a class="navbar-brand" href="index.html">Raynhardt Van Zyl</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="experience.html">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="references.html">References</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="personal.html">Personal</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
     <div class="container py-5">
-        <ul class="nav nav-tabs" id="myTab" role="tablist">
-            <li class="nav-item">
-                <a class="nav-link active" id="objective-tab" data-toggle="tab" href="#objective" role="tab" aria-controls="objective" aria-selected="true">Objective</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" id="experience-tab" data-toggle="tab" href="#experience" role="tab" aria-controls="experience" aria-selected="false">Experience</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" id="projects-tab" data-toggle="tab" href="#projects" role="tab" aria-controls="projects" aria-selected="false">Projects</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" id="references-tab" data-toggle="tab" href="#references" role="tab" aria-controls="references" aria-selected="false">References</a>
-            </li>
-        </ul>
-        <div class="tab-content" id="myTabContent">
-            <div class="tab-pane fade show active" id="objective" role="tabpanel" aria-labelledby="objective-tab">
-                <h2>Objective</h2>
-                    <p>With a robust background in circuit development, software development, and product prototyping, I have cultivated a strong passion for innovative technologies and a solid foundation in electronic engineering. My current research, "Low-Cost Autonomous Rover with Heterogeneous Compute," has further refined my skills and deepened my understanding of the field.</p>
-
-                    <p>I am particularly intrigued by the potential to develop a theoretical framework for emerging learning algorithms that amalgamate the strengths of local brain-inspired learning and backpropagation. This interest is complemented by my ongoing project, where I am building an event-driven asynchronous spiking neural network framework based on the Rust language.</p>
-
-                    <p>This project involves testing the effects of adding complexity to neural structures, such as dendrite delay, dendrite attenuation, dendrite grouping and cross talk, axon distance searching distributions, and the use of neuromodulators similar to dopamine and serotonin to modulate the adaptive nature of the parameters in search of optimized neural circuits. This work has further fueled my interest in the PhD position you are offering.</p>
-            </div>
-            <div class="tab-pane fade" id="experience" role="tabpanel" aria-labelledby="experience-tab">
-                <h2>Experience</h2>
-    
-                    <h3>PSG Head Consultants</h3>
-                    <p><strong>Graduate Engineer</strong> | Jan 2023 - Jul 2023</p>
-                    <ul>
-                        <li>Worked collaboratively with a team of engineers to provide engineering solutions and consultancy services.</li>
-                        <li>Participated in project planning, design, and implementation activities under the guidance of senior engineers.</li>
-                        <li>Conducted research, data analysis, and simulations to support engineering projects and decision-making processes.</li>
-                        <li>Assisted in the preparation of technical reports, proposals, and presentations.</li>
-                        <li>Stayed updated with industry trends, technologies, and best practices to contribute to continuous improvement initiatives.</li>
-                        <li>Contributed to team meetings and discussions, sharing insights and ideas for enhancing project outcomes.</li>
-                    </ul>
-                
-                    <h3>KU Leuven</h3>
-                    <p><strong>Researcher</strong> | Oct 2022 - Dec 2022</p>
-                    <p>As a visiting scholar at the Faculty of Engineering Science, I assisted the research team in developing their FPGA program to accelerate their CasADi software.</p>
-                
-                    <h3>Cloud Line</h3>
-                    <p><strong>Airship Testing</strong> | Jan 2021 - Oct 2022</p>
-                    <ul>
-                        <li>Participated in airship testing activities, including flight tests and system performance evaluations.</li>
-                        <li>Assisted in the setup and calibration of testing equipment and instrumentation.</li>
-                        <li>Conducted data collection and analysis during airship flights, ensuring accurate and reliable measurements.</li>
-                        <li>Collaborated with engineers and technicians to troubleshoot any issues encountered during testing.</li>
-                    </ul>
-                
-                    <h3>Green Link Solutions</h3>
-                    <p><strong>Sensor Designer (PCB / Embedded)</strong> | Jun 2021 - Dec 2021</p>
-                    <ul>
-                        <li>Designed and developed sensors and sensor systems for specific applications focusing on PCB design and embedded systems.</li>
-                        <li>Prototyped and tested sensor designs, analyzed data, and provided recommendations for improvement.</li>
-                    </ul>
-                
-                    <h3>Enerdyne</h3>
-                    <p><strong>Product Prototyping and Development (OpenGL / Mainframe Development)</strong> | Apr 2021 - Dec 2021</p>
-                    <ul>
-                        <li>Contributed to the prototyping and development of products, focusing on OpenGL and mainframe development.</li>
-                        <li>Collaborated with product managers, engineers, and designers to translate requirements into functional product prototypes.</li>
-                        <li>Developed and implemented software components using OpenGL for enhanced graphical rendering.</li>
-                        <li>Contributed to mainframe development for efficient data processing and system integration.</li>
-                        <li>Conducted thorough testing and validation of prototypes, ensuring adherence to quality standards.</li>
-                        <li>Collaborated with cross-functional teams to identify areas for product optimization and improvement.</li>
-                        <li>Assisted in the preparation of technical documentation, including user manuals and release notes.</li>
-                    </ul>
-                
-                    <h3>Hexabyte</h3>
-                    <p><strong>Software Developer Intern</strong> | June 2019</p>
-                    <ul>
-                        <li>Assisted in the development and implementation of software solutions.</li>
-                        <li>Participated in software design and coding activities under the guidance of senior developers.</li>
-                        <li>Conducted testing and debugging of software components.</li>
-                        <li>Assisted in the documentation and maintenance of software code and systems.</li>
-                        <li>Collaborated with the development team to deliver software projects within defined timelines.</li>
-                    </ul>
-            </div>
-            <div class="tab-pane fade" id="projects" role="tabpanel" aria-labelledby="projects-tab">
-                <!-- Your projects here -->
-            </div>
-            <div class="tab-pane fade" id="references" role="tabpanel" aria-labelledby="references-tab">
-                <!-- Your references here -->
-            </div>
-        </div>
-    </div>
 
     <footer class="footer bg-dark text-white text-center py-3">
         <div class="container">
@@ -115,20 +44,12 @@
     </div>
 
     <div class="container py-5" id="objective">
-        </div>
+        <h2>Objective</h2>
+        <p>With a robust background in circuit development, software development, and product prototyping, I have cultivated a strong passion for innovative technologies and a solid foundation in electronic engineering. My current research, "Low-Cost Autonomous Rover with Heterogeneous Compute," has further refined my skills and deepened my understanding of the field.</p>
     
-
-    <div class="container py-5" id="experience">
-        
-    </div>
+        <p>I am particularly intrigued by the potential to develop a theoretical framework for emerging learning algorithms that amalgamate the strengths of local brain-inspired learning and backpropagation. This interest is complemented by my ongoing project, where I am building an event-driven asynchronous spiking neural network framework based on the Rust language.</p>
     
-
-    <div class="container py-5" id="projects">
-        <!-- Your projects here -->
-    </div>
-
-    <div class="container py-5" id="references">
-        <!-- Your references here -->
+        <p>This project involves testing the effects of adding complexity to neural structures, such as dendrite delay, dendrite attenuation, dendrite grouping and cross talk, axon distance searching distributions, and the use of neuromodulators similar to dopamine and serotonin to modulate the adaptive nature of the parameters in search of optimized neural circuits. This work has further fueled my interest in the PhD position you are offering.</p>
     </div>
 
     <!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/a209ab7c241a52af929c55880933a084.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
