@@ -1,40 +1,186 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M8J3D24EH6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-M8J3D24EH6');
+    </script>
+
+    <meta name="description" content="Raynhardt Van Zyl - Entrepreneur and Researcher based in Cape Town, South Africa">
+    <meta name="keywords"
+        content="Raynhardt Van Zyl, Entrepreneur, Researcher, Cape Town, South Africa, Robotics, Neuroscience, Farming, Power, Finance">
+    <meta name="author" content="Raynhardt Van Zyl">
+    <meta property="og:title" content="Raynhardt Van Zyl">
+    <meta property="og:description"
+        content="Raynhardt Van Zyl - Entrepreneur and Researcher based in Cape Town, South Africa">
+    <meta property="og:image" content="Face.png">
+    <meta property="og:url" content="https://raynhardt-van-zyl.github.io/projects.html">
+
+
     <title>Raynhardt Van Zyl</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="icon" href="logo.png" type="image/png">
     <style>
         body {
-            background: #f5f5f5;
+            background: #F1F3F4;
+            /* Light Grey */
         }
-        .navbar {
-            background: #333;
+
+        .navbar,
+        .footer {
+            background: #0A2239;
+            /* Dark Blue */
         }
-        .navbar-brand, .nav-link {
-            color: #f5f5f5;
+
+        .navbar-brand,
+        .nav-link {
+            color: #FFFFFF;
+            /* White */
         }
+
         .main-section {
-            background: #fff;
+            background: #FFFFFF;
+            /* White */
+            color: #0A2239;
+            /* Dark Blue */
             margin-top: 30px;
             padding: 20px;
             border-radius: 5px;
-            box-shadow: 0px 0px 10px #aaa;
+            box-shadow: 0px 0px 10px #1C77C3;
+            /* Accent Blue */
         }
+
         #scrollTop {
-            background: #333;
-            color: #f5f5f5;
+            background: #1C77C3;
+            /* Accent Blue */
+            color: #FFFFFF;
+            /* White */
         }
-        .footer {
-            background: #333;
+
+        h2,
+        h3 {
+            font-weight: 500;
+            color: #0A2239;
+            /* Dark Blue */
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .fade-in {
+            animation-name: fadeIn;
+            animation-duration: 1s;
+            animation-fill-mode: both;
+        }
+
+        .card {
+            background: #FFFFFF;
+            /* White */
+            color: #0A2239;
+            /* Dark Blue */
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card-title {
+            color: #1C77C3;
+            /* Accent Blue */
+        }
+
+        body.dark-theme {
+            background: #121212;
+            /* Dark Grey */
+            color: #E0E0E0;
+            /* Light Grey */
+        }
+
+        body.dark-theme .navbar,
+        body.dark-theme .footer {
+            background: #0A2239;
+            /* Dark Blue */
+        }
+
+        body.dark-theme .navbar-brand,
+        body.dark-theme .nav-link {
+            color: #E0E0E0;
+            /* Light Grey */
+        }
+
+        body.dark-theme .main-section {
+            background: #1F1F1F;
+            /* Darker Grey */
+            color: #E0E0E0;
+            /* Light Grey */
+            box-shadow: 0px 0px 10px #0A2239;
+            /* Dark Blue */
+        }
+
+        body.dark-theme #scrollTop {
+            background: #0A2239;
+            /* Dark Blue */
+            color: #E0E0E0;
+            /* Light Grey */
+        }
+
+        body.dark-theme h2,
+        body.dark-theme h3 {
+            color: #E0E0E0;
+            /* Light Grey */
+        }
+
+        body.dark-theme .card {
+            background: #1F1F1F;
+            /* Darker Grey */
+            color: #E0E0E0;
+            /* Light Grey */
+        }
+
+        body.dark-theme .card-title {
+            color: #1C77C3;
+            /* Accent Blue */
         }
     </style>
+
+
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
             <a class="navbar-brand" href="index.html">Raynhardt Van Zyl</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="navbar-brand social">
+                <a href="mailto:Raynhardt.vanzyl@gmail.com" title="email" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://github.com/Raynhardt-Van-Zyl" title="GitHub" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/raynhardt-vincent-van-zyl/" title="LinkedIn" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -52,23 +198,90 @@
                         <a class="nav-link" href="personal.html">Personal</a>
                     </li>
                 </ul>
+
             </div>
+            <button id="theme-toggle" class="btn btn-outline-light ml-auto">
+                <i class="fas fa-moon"></i>
+            </button>
         </div>
+
     </nav>
-    
+
+
 
     <div class="container py-5 text-center">
         <img src="Face.png" alt="Raynhardt Van Zyl" class="img-fluid rounded-circle" style="width: 200px;">
         <h1 class="mt-4">Raynhardt Van Zyl</h1>
     </div>
 
-    <div class="container main-section" id="objective">
-        <h2>Objective</h2>
-        <p>With a robust background in circuit development, software development, and product prototyping, I have cultivated a strong passion for innovative technologies and a solid foundation in electronic engineering. My current research, "Low-Cost Autonomous Rover with Heterogeneous Compute," has further refined my skills and deepened my understanding of the field.</p>
-    
-        <p>I am particularly intrigued by the potential to develop a theoretical framework for emerging learning algorithms that amalgamate the strengths of local brain-inspired learning and backpropagation. This interest is complemented by my ongoing project, where I am building an event-driven asynchronous spiking neural network framework based on the Rust language.</p>
-    
-        <p>This project involves testing the effects of adding complexity to neural structures, such as dendrite delay, dendrite attenuation, dendrite grouping and cross talk, axon distance searching distributions, and the use of neuromodulators similar to dopamine and serotonin to modulate the adaptive nature of the parameters in search of optimized neural circuits. This work has further fueled my interest in the PhD position you are offering.</p>
+    <div class="container main-section" id="about-me">
+        <div class="card mb-4">
+            <div class="card-body">
+                <h2 class="card-title"><i class="fas fa-user-tie"></i>Meet Raynhardt Vincent Van Zyl: Innovator,
+                    Visionary, Change-Maker</h2>
+                <p class="card-text">Hello! I'm Raynhardt Vincent Van Zyl, an Entrepreneur and Researcher based in the
+                    vibrant city of Cape Town, South Africa. With a Master's degree in Robotics Engineering, I've
+                    dedicated my career to pushing the boundaries of technology and creating innovative solutions that
+                    have the power to change the world.</p>
+            </div>
+        </div>
+        <div class="card mb-4">
+            <div class="card-body">
+                <h2 class="card-title"><i class="fas fa-brain"></i>A Multidisciplinary Maverick</h2>
+                <p class="card-text">My work spans across diverse fields such as Robotics, Neuroscience, Farming, Power,
+                    and Finance. I've had the privilege of collaborating with talented teams at prestigious institutions
+                    like PSG Head Consultants and KU Leuven, and innovative companies like Enerdyne. My experiences have
+                    honed my skills in areas as varied as heterogeneous computing for low-cost robotic platforms,
+                    robotic arm design, asynchronous impulse-based spiking neural network framework using Rust language,
+                    self-sufficient aquaponics systems, solar tracking systems, and algorithmic trading systems.</p>
+            </div>
+        </div>
+        <div class="card mb-4">
+            <div class="card-body">
+                <h2 class="card-title"><i class="fas fa-lightbulb"></i>Driven by Curiosity, Guided by Excellence</h2>
+                <p class="card-text">What sets me apart is an insatiable curiosity and an innate desire to understand
+                    the world and how it works.
+                    This drive fuels my commitment to hard work, quality, and a relentless pursuit of knowledge. I
+                    believe in
+                    the power of technology to solve complex problems and am dedicated to using my skills to help others
+                    and
+                    make a positive impact on the world.</p>
+            </div>
+        </div>
+
+        <div class="card mb-4">
+            <div class="card-body">
+                <h2 class="card-title"><i class="fas fa-rocket"></i>Aiming for the Stars</h2>
+                <p class="card-text">My career goal is nothing short of changing the world for the better. Through novel
+                    research and innovative
+                    solutions, I aim to push humanity towards a brighter, more sustainable future.</p>
+            </div>
+        </div>
+
+        <div class="card mb-4">
+            <div class="card-body">
+                <h2 class="card-title"><i class="fas fa-mountain"></i>A Life Beyond Work</h2>
+                <p class="card-text">Outside of my professional life, I'm an outdoor enthusiast who enjoys hiking,
+                    cycling, jogging, and rock
+                    climbing. I also love building practical things, like the robotic arm and self-sufficient aquaponics
+                    system
+                    I'm currently designing. I believe in giving back to the community and have helped start a new
+                    church in
+                    Wellington, where we strive to assist the less fortunate.</p>
+            </div>
+        </div>
+
+        <div class="card mb-4">
+            <div class="card-body">
+                <h2 class="card-title"><i class="fas fa-tools"></i>Your Go-To Expert</h2>
+                <p class="card-text">With a broad knowledge in various scientific fields, including engineering,
+                    computer science, neuroscience,
+                    agriculture, chemistry, and electronics, I bring a unique, interdisciplinary perspective to every
+                    project.
+                    If you're looking for someone who can approach problems from unique angles and develop comprehensive
+                    solutions, you've come to the right place.</p>
+            </div>
+        </div>
     </div>
 
     <div class="container main-section" id="bible-verses">
@@ -77,25 +290,26 @@
             <div class="card">
                 <div class="card-body">
                     <blockquote class="blockquote mb-0">
-                        <p>For I know the plans I have for you,” declares the LORD, “plans to prosper you and not to harm you, plans to give you hope and a future.</p>
-                        <footer class="blockquote-footer">Jeremiah 29:11</footer>
+                        <p id="verse1"></p>
+                        <footer class="blockquote-footer" id="reference1"></footer>
                     </blockquote>
                 </div>
             </div>
             <div class="card">
                 <div class="card-body">
                     <blockquote class="blockquote mb-0">
-                        <p>Trust in the LORD with all your heart and lean not on your own understanding; in all your ways submit to him, and he will make your paths straight.</p>
-                        <footer class="blockquote-footer">Proverbs 3:5-6</footer>
+                        <p id="verse2"></p>
+                        <footer class="blockquote-footer" id="reference2"></footer>
                     </blockquote>
                 </div>
             </div>
-            <!-- Add more cards for more verses -->
         </div>
+
     </div>
 
-    
-    <a href="#" class="btn btn-dark btn-lg" id="scrollTop" role="button" style="position: fixed; bottom: 20px; right: 20px; display: none;"><i class="fas fa-arrow-up"></i></a>
+
+    <a href="#" class="btn btn-dark btn-lg" id="scrollTop" role="button"
+        style="position: fixed; bottom: 20px; right: 20px; display: none;"><i class="fas fa-arrow-up"></i></a>
 
     <footer class="footer text-white text-center py-3">
         <div class="container">
@@ -103,9 +317,117 @@
         </div>
     </footer>
 
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="script.js"></script>
+
+    <script>
+        var bibleVerses = [
+            { verse: "For I know the plans I have for you,” declares the LORD, “plans to prosper you and not to harm you, plans to give you hope and a future.", reference: "Jeremiah 29:11" },
+            { verse: "Trust in the LORD with all your heart and lean not on your own understanding; in all your ways submit to him, and he will make your paths straight.", reference: "Proverbs 3:5-6" },
+            { verse: "The fear of the LORD is the beginning of knowledge, but fools despise wisdom and instruction.", reference: "Proverbs 1:7" },
+            { verse: "Get wisdom, get understanding; do not forget my words or turn away from them.", reference: "Proverbs 4:5" },
+            { verse: "For the LORD gives wisdom; from his mouth come knowledge and understanding.", reference: "Proverbs 2:6" },
+            { verse: "The unfolding of your words gives light; it gives understanding to the simple.", reference: "Psalms 119:130" },
+            { verse: "But the Advocate, the Holy Spirit, whom the Father will send in my name, will teach you all things and will remind you of everything I have said to you.", reference: "John 14:26" },
+            { verse: "For to one is given through the Spirit the utterance of wisdom, and to another the utterance of knowledge according to the same Spirit,", reference: "1 Corinthians 12:8" },
+            { verse: "And this is my prayer: that your love may abound more and more in knowledge and depth of insight,", reference: "Philippians 1:9" },
+            { verse: "But grow in the grace and knowledge of our Lord and Savior Jesus Christ. To him be glory both now and forever! Amen.", reference: "2 Peter 3:18" },
+            { verse: "An intelligent heart acquires knowledge, and the ear of the wise seeks knowledge.", reference: "Proverbs 18:15" },
+            { verse: "The heart of the discerning acquires knowledge, for the ears of the wise seek it out.", reference: "Proverbs 18:15" },
+            { verse: "All this also comes from the LORD Almighty, whose plan is wonderful, whose wisdom is magnificent.", reference: "Isaiah 28:29" },
+            { verse: "How much better to get wisdom than gold, to get insight rather than silver!", reference: "Proverbs 16:16" },
+            { verse: "I will instruct you and teach you in the way you should go; I will counsel you with my loving eye on you.", reference: "Psalm 32:8" },
+            { verse: "Apply your heart to instruction and your ears to words of knowledge.", reference: "Proverbs 23:12" },
+            { verse: "The fear of the LORD is the beginning of wisdom, and knowledge of the Holy One is understanding.", reference: "Proverbs 9:10" },
+            { verse: "Whoever loves discipline loves knowledge, but whoever hates correction is stupid.", reference: "Proverbs 12:1" },
+            { verse: "A wise man will hear, and will increase learning; and a man of understanding shall attain unto wise counsels.", reference: "Proverbs 1:5" },
+            { verse: "And by knowledge shall the chambers be filled with all precious and pleasant riches.", reference: "Proverbs 24:4" },
+            { verse: "The heart of the prudent getteth knowledge; and the ear of the wise seeketh knowledge.", reference: "Proverbs 18:15" },
+            { verse: "But the wisdom that is from above is first pure, then peaceable, gentle, and easy to be intreated, full of mercy and good fruits, without partiality, and without hypocrisy.", reference: "James 3:17" }
+
+        ];
+
+    </script>
+
+    <script>
+        function displayVerse() {
+            var today = new Date();
+            var index1 = today.getDate() % bibleVerses.length;
+            var index2 = (index1 + 1) % bibleVerses.length;  // Ensure the second verse is different
+            var verse1 = bibleVerses[index1];
+            var verse2 = bibleVerses[index2];
+            document.getElementById('verse1').innerText = verse1.verse;
+            document.getElementById('reference1').innerText = verse1.reference;
+            document.getElementById('verse2').innerText = verse2.verse;
+            document.getElementById('reference2').innerText = verse2.reference;
+        }
+    </script>
+
+
+    <script>
+        // Check for saved theme in local storage and apply it
+        window.onload = function () {
+            displayVerse();
+            var theme = localStorage.getItem('theme');
+            if (theme === 'dark') {
+                document.body.classList.add('dark-theme');
+                var icon = themeToggle.querySelector('i');
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
+            } else {
+                document.body.classList.remove('dark-theme');
+                var icon = themeToggle.querySelector('i');
+                icon.classList.remove('fa-sun');
+                icon.classList.add('fa-moon');
+            }
+        };
+
+        var themeToggle = document.getElementById('theme-toggle');
+
+        function switchTheme() {
+            var currentTheme = document.body.className;
+            var newTheme = currentTheme === 'dark-theme' ? '' : 'dark-theme';
+            document.body.className = newTheme;
+            var icon = themeToggle.querySelector('i');
+            if (newTheme === 'dark-theme') {
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
+                localStorage.setItem('theme', 'dark');
+            } else {
+                icon.classList.remove('fa-sun');
+                icon.classList.add('fa-moon');
+                localStorage.setItem('theme', 'light');
+            }
+        }
+
+        // Set default theme to light
+        document.body.className = '';
+
+        themeToggle.addEventListener('click', switchTheme, false);
+    </script>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var observer = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('fade-in');
+                    }
+                });
+            });
+
+            document.querySelectorAll('.card').forEach(function (card) {
+                observer.observe(card);
+            });
+        });
+    </script>
+
+
+
 </body>
+
 </html>

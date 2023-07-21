@@ -1,41 +1,172 @@
- 
- <!DOCTYPE html>
- <html>
- <head>
-     <title>Raynhardt Van Zyl</title>
-     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-     <style>
-         body {
-             background: #f5f5f5;
-         }
-         .navbar {
-             background: #333;
-         }
-         .navbar-brand, .nav-link {
-             color: #f5f5f5;
-         }
-         .main-section {
-             background: #fff;
-             margin-top: 30px;
-             padding: 20px;
-             border-radius: 5px;
-             box-shadow: 0px 0px 10px #aaa;
-         }
-         #scrollTop {
-             background: #333;
-             color: #f5f5f5;
-         }
-         .footer {
-             background: #333;
-         }
-     </style>
- </head>
- <body>
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M8J3D24EH6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-M8J3D24EH6');
+    </script>
+
+    <title>Raynhardt Van Zyl</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="icon" href="logo.png" type="image/png">
+    <style>
+        body {
+            background: #F1F3F4;
+            /* Light Grey */
+        }
+
+        .navbar,
+        .footer {
+            background: #0A2239;
+            /* Dark Blue */
+        }
+
+        .navbar-brand,
+        .nav-link {
+            color: #FFFFFF;
+            /* White */
+        }
+
+        .main-section {
+            background: #FFFFFF;
+            /* White */
+            color: #0A2239;
+            /* Dark Blue */
+            margin-top: 30px;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px #1C77C3;
+            /* Accent Blue */
+        }
+
+        #scrollTop {
+            background: #1C77C3;
+            /* Accent Blue */
+            color: #FFFFFF;
+            /* White */
+        }
+
+        h2,
+        h3 {
+            font-weight: 500;
+            color: #0A2239;
+            /* Dark Blue */
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .fade-in {
+            animation-name: fadeIn;
+            animation-duration: 1s;
+            animation-fill-mode: both;
+        }
+
+        .card {
+            background: #FFFFFF;
+            /* White */
+            color: #0A2239;
+            /* Dark Blue */
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card-title {
+            color: #1C77C3;
+            /* Accent Blue */
+        }
+
+        body.dark-theme {
+            background: #121212;
+            /* Dark Grey */
+            color: #E0E0E0;
+            /* Light Grey */
+        }
+
+        body.dark-theme .navbar,
+        body.dark-theme .footer {
+            background: #0A2239;
+            /* Dark Blue */
+        }
+
+        body.dark-theme .navbar-brand,
+        body.dark-theme .nav-link {
+            color: #E0E0E0;
+            /* Light Grey */
+        }
+
+        body.dark-theme .main-section {
+            background: #1F1F1F;
+            /* Darker Grey */
+            color: #E0E0E0;
+            /* Light Grey */
+            box-shadow: 0px 0px 10px #0A2239;
+            /* Dark Blue */
+        }
+
+        body.dark-theme #scrollTop {
+            background: #0A2239;
+            /* Dark Blue */
+            color: #E0E0E0;
+            /* Light Grey */
+        }
+
+        body.dark-theme h2,
+        body.dark-theme h3 {
+            color: #E0E0E0;
+            /* Light Grey */
+        }
+
+        body.dark-theme .card {
+            background: #1F1F1F;
+            /* Darker Grey */
+            color: #E0E0E0;
+            /* Light Grey */
+        }
+
+        body.dark-theme .card-title {
+            color: #1C77C3;
+            /* Accent Blue */
+        }
+    </style>
+</head>
+
+<body>
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
             <a class="navbar-brand" href="index.html">Raynhardt Van Zyl</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="navbar-brand social">
+                <a href="mailto:Raynhardt.vanzyl@gmail.com" title="email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://github.com/Raynhardt-Van-Zyl" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/raynhardt-vincent-van-zyl/" title="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -54,35 +185,90 @@
                     </li>
                 </ul>
             </div>
+            <button id="theme-toggle" class="btn btn-outline-light ml-auto">
+                <i class="fas fa-moon"></i>
+            </button>
         </div>
     </nav>
 
-     <div class="container main-section" id="personal">
+    <div class="container main-section" id="personal">
         <h2>About Me</h2>
-        <p>Hi, I'm Raynhardt Van Zyl, a passionate engineer with a robust background in circuit development, software development, and product prototyping. I have a strong passion for innovative technologies and a solid foundation in electronic engineering. My current research, "Low-Cost Autonomous Rover with Heterogeneous Compute," has further refined my skills and deepened my understanding of the field.</p>
-    
+        <p>Hi, I'm Raynhardt Van Zyl, a passionate engineer with a robust background in circuit development, software
+            development, and product prototyping. I have a strong passion for innovative technologies and a solid
+            foundation in electronic engineering. My current research, "Low-Cost Autonomous Rover with Heterogeneous
+            Compute," has further refined my skills and deepened my understanding of the field.</p>
+
         <h2>Interests</h2>
-        <p>When I'm not working on my research or developing new technologies, I enjoy spending time outdoors, hiking, and exploring new places. I'm also an avid reader and enjoy learning about new advancements in technology and science.</p>
-    
+        <p>When I'm not working on my research or developing new technologies, I enjoy spending time outdoors, hiking,
+            and exploring new places. I'm also an avid reader and enjoy learning about new advancements in technology
+            and science.</p>
+
         <h2>Personal Philosophy</h2>
-        <p>I believe in the power of perseverance and hard work. I'm always looking for new challenges and opportunities to learn and grow. I'm passionate about using my skills to make a positive impact in the world and contribute to the advancement of technology.</p>
+        <p>I believe in the power of perseverance and hard work. I'm always looking for new challenges and opportunities
+            to learn and grow. I'm passionate about using my skills to make a positive impact in the world and
+            contribute to the advancement of technology.</p>
     </div>
 
-      <!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/a209ab7c241a52af929c55880933a084.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+    <!-- LightWidget WIDGET -->
+    <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe
+        src="//lightwidget.com/widgets/a209ab7c241a52af929c55880933a084.html" scrolling="no" allowtransparency="true"
+        class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
 
-     
-     <a href="#" class="btn btn-dark btn-lg" id="scrollTop" role="button" style="position: fixed; bottom: 20px; right: 20px; display: none;"><i class="fas fa-arrow-up"></i></a>
- 
-     <footer class="footer text-white text-center py-3">
-         <div class="container">
-             &copy; 2023 Raynhardt Van Zyl
-         </div>
-     </footer>
- 
-     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-     <script src="script.js"></script>
- </body>
- </html>
- 
+
+    <a href="#" class="btn btn-dark btn-lg" id="scrollTop" role="button"
+        style="position: fixed; bottom: 20px; right: 20px; display: none;"><i class="fas fa-arrow-up"></i></a>
+
+    <footer class="footer text-white text-center py-3">
+        <div class="container">
+            &copy; 2023 Raynhardt Van Zyl
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="script.js"></script>
+
+    <script>
+        // Check for saved theme in local storage and apply it
+        window.onload = function () {
+            var theme = localStorage.getItem('theme');
+            if (theme === 'dark') {
+                document.body.classList.add('dark-theme');
+                var icon = themeToggle.querySelector('i');
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
+            } else {
+                document.body.classList.remove('dark-theme');
+                var icon = themeToggle.querySelector('i');
+                icon.classList.remove('fa-sun');
+                icon.classList.add('fa-moon');
+            }
+        };
+
+        var themeToggle = document.getElementById('theme-toggle');
+
+        function switchTheme() {
+            var currentTheme = document.body.className;
+            var newTheme = currentTheme === 'dark-theme' ? '' : 'dark-theme';
+            document.body.className = newTheme;
+            var icon = themeToggle.querySelector('i');
+            if (newTheme === 'dark-theme') {
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
+                localStorage.setItem('theme', 'dark');
+            } else {
+                icon.classList.remove('fa-sun');
+                icon.classList.add('fa-moon');
+                localStorage.setItem('theme', 'light');
+            }
+        }
+
+        // Set default theme to light
+        document.body.className = '';
+
+        themeToggle.addEventListener('click', switchTheme, false);
+    </script>
+</body>
+
+</html>
