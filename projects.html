@@ -147,6 +147,31 @@
             color: #1C77C3;
             /* Accent Blue */
         }
+
+        .status {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .in-progress {
+            color: #FFA500;
+            /* Orange */
+        }
+
+        .on-hold {
+            color: #FF0000;
+            /* Red */
+        }
+
+        .completed {
+            color: #008000;
+            /* Green */
+        }
+
+        .awaiting-review {
+            color: #0000FF;
+            /* Blue */
+        }
     </style>
 </head>
 
@@ -198,6 +223,7 @@
             <div class="card-body">
                 <h5 class="card-title">Heterogeneous Computing for Low-Cost Robotic Platforms</h5>
                 <h6 class="card-subtitle mb-2 text-muted">Raynhardt van Zyl and Dr Callen Fisher</h6>
+                <p class="status awaiting-review">Status: Awaiting Review</p>
                 <p class="card-text">This study presents a novel approach to the design of cost-effective autonomous
                     rovers using a heterogeneous computing architecture. The research focuses on the development and
                     evaluation of an autonomous rover system, priced under R50 000, that can operate independently in
@@ -209,13 +235,17 @@
                     the field of autonomous systems.</p>
                 <img class="card-img-top" src="Compute.jpg" alt="Compute Image"
                     style="width: 50%; height: auto; display: block; margin-left: auto; margin-right: auto;">
+                
                 <a href="#" class="card-link">Read More</a>
             </div>
+            
         </div>
+        <div class="mb-3"></div>
         <div class="card">
             <div class="card-body">
                 <h5 class="card-title">Robotic Arm Design</h5>
                 <h6 class="card-subtitle mb-2 text-muted">Raynhardt van Zyl</h6>
+                <p class="status on-hold">Status: On Hold</p>
                 <p class="card-text">This is a work-in-progress project where I am designing a robotic arm. The goal of
                     this project is to create a versatile and efficient robotic arm that can be used in a variety of
                     applications. Stay tuned for updates and progress reports on this exciting project.</p>
@@ -234,6 +264,7 @@
                 <h5 class="card-title">Asynchronous Impulse based Spiking Neural Network Framework using Rust Language
                 </h5>
                 <h6 class="card-subtitle mb-2 text-muted">Raynhardt van Zyl</h6>
+                <p class="status in-progress">Status: In Progress</p>
                 <p class="card-text">This project aims to develop an asynchronous impulse-based spiking neural network
                     (SNN) framework using the Rust programming language. SNNs are third-generation neural networks that
                     mimic the behavior of neurons in the human brain. Unlike traditional artificial neural networks,
@@ -259,6 +290,7 @@
             <div class="card-body">
                 <h5 class="card-title">Self-Sufficient Aquaponics System</h5>
                 <h6 class="card-subtitle mb-2 text-muted">Raynhardt van Zyl and El-Mari Meyer</h6>
+                <p class="status on-hold">Status: On Hold</p>
                 <p class="card-text">
                     I am currently engaged in the development of an advanced, self-sufficient Aquaponics system. This
                     project represents an intersection of hydroponics and aquaculture, leveraging the symbiotic
@@ -294,6 +326,7 @@
             <div class="card-body">
                 <h5 class="card-title">Solar Tracking System</h5>
                 <h6 class="card-subtitle mb-2 text-muted">Raynhardt van Zyl and Vincent Van Zyl</h6>
+                <p class="status in-progress">Status: In Progress</p>
                 <p class="card-text">
                     I am currently in the process of developing an innovative solar tracking system. This project aims
                     to optimize the efficiency of solar installations, particularly in regions far from the equator
@@ -332,6 +365,7 @@
             <div class="card-body">
                 <h5 class="card-title">Algorithmic Trading System</h5>
                 <h6 class="card-subtitle mb-2 text-muted">Raynhardt van Zyl</h6>
+                <p class="status in-progress">Status: In Progress</p>
                 <p class="card-text">
                     I am currently developing an advanced algorithmic trading system designed to predict stock market
                     trends and execute trades automatically. This project represents a cutting-edge application of
