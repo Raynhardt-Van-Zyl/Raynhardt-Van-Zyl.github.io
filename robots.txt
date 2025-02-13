@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://raynhardt-van-zyl.github.io/sitemap.xml
