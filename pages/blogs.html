@@ -2,7 +2,6 @@
 <html>
 
 <head>
-
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-M8J3D24EH6"></script>
     <script>
@@ -13,7 +12,7 @@
         gtag('config', 'G-M8J3D24EH6');
     </script>
 
-    <title>Raynhardt Van Zyl</title>
+    <title>Raynhardt Van Zyl - Blogs</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -148,6 +147,15 @@
             /* Accent Blue */
         }
     </style>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Blog posts and writings by Raynhardt Van Zyl.">
+    <meta name="keywords" content="Raynhardt Van Zyl Blog, Technology, Robotics, Research, Personal Blog">
+
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Raynhardt Van Zyl - Blogs">
+    <meta property="og:description" content="Blog posts and writings by Raynhardt Van Zyl.">
+    <meta property="og:type" content="website">
 </head>
 
 <body>
@@ -193,6 +201,97 @@
             </button>
         </div>
     </nav>
+
+    <div class="container main-section" id="blog">
+        <h2>Blog</h2>
+        <p>Check out some of my latest blog posts:</p>
+
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Embedded Rust in 2025: Why It’s Time to Rethink Firmware Beyond C</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Published: 2025</h6>
+                <p class="card-text">
+                    For years C dominated microcontroller development. In 2025, Rust has matured into a production-ready
+                    option for embedded systems — offering strong safety guarantees, modern tooling and portable drivers.
+                    Below is a short summary; click "Read more" to expand the full article.
+                </p>
+                <a class="card-link" data-toggle="collapse" href="#post-embedded-rust" role="button" aria-expanded="false" aria-controls="post-embedded-rust">Read more</a>
+
+                <div class="collapse mt-3" id="post-embedded-rust">
+                    <div class="card card-body">
+                        <h5>Embedded Rust in 2025: Why It’s Time to Rethink Firmware Beyond C</h5>
+
+                        <p>For decades, C has been the lingua franca of microcontroller programming — small, portable and close to the metal.
+                        Anyone who has spent late nights chasing a stray pointer or debugging a subtle race condition knows the cost:
+                        C gives you rope, and plenty of engineers hang themselves with it.</p>
+
+                        <p>Rust is changing that equation. In 2025, Rust is no longer the experimental newcomer in embedded systems — it's
+                        a production-grade option. Toolchains, hardware abstraction layers (HALs), and real-time frameworks have matured
+                        to the point where companies are shipping products with Rust.</p>
+
+                        <h6>The State of Embedded Rust in 2025</h6>
+                        <ul>
+                            <li><strong>HALs and PACs are stable.</strong> The release of <code>embedded-hal</code> 1.0 provided a stable,
+                            trait-based API for peripherals (SPI, I²C, UART, GPIO). With companion crates like <code>embedded-hal-async</code>,
+                            drivers can be portable and energy-efficient. Major families (STM32, nRF, Espressif) have actively maintained HALs
+                            built on PACs generated with <code>svd2rust</code>.</li>
+
+                            <li><strong>Concurrency is no longer a guessing game.</strong> RTIC and Embassy provide robust, production-ready
+                            models for real-time and async firmware respectively — deterministic scheduling with RTIC, and expressive
+                            async/await low-power designs with Embassy.</li>
+
+                            <li><strong>Tooling caught up.</strong> <code>probe-rs</code> integrated with Cargo via <code>cargo-flash</code> and
+                            <code>cargo-embed</code>, making flashing and debugging much smoother. For logging, <code>defmt</code> offers efficient,
+                            structured output tailored to tiny MCUs.</li>
+                        </ul>
+
+                        <h6>Why Bother? The Real Advantages</h6>
+                        <p>Rust's primary advantage is memory safety: whole classes of firmware bugs (use-after-free, buffer overruns, data races)
+                        are prevented at compile time. That translates to fewer critical regressions and faster time-to-fix.</p>
+                        <ul>
+                            <li><strong>Portable drivers:</strong> One SPI driver can target many MCUs thanks to trait-based HALs.</li>
+                            <li><strong>Modern tooling:</strong> Cargo provides package management, reproducible builds, and integrated testing.</li>
+                            <li><strong>Zero-cost abstractions:</strong> Generics and expressive APIs without runtime overhead.</li>
+                        </ul>
+
+                        <h6>The Rough Edges</h6>
+                        <p>Migrating from C to Rust has costs:</p>
+                        <ul>
+                            <li>Longer compile times for large projects — CI may need tuning.</li>
+                            <li>Ecosystem coverage is uneven for very niche MCUs; you may need to generate or maintain PACs.</li>
+                            <li>Debugging workflows change — <code>probe-rs</code> is powerful but different.</li>
+                        </ul>
+
+                        <h6>Migrating from C: A Pragmatic Path</h6>
+                        <p>A big-bang rewrite is risky. An incremental approach works best:</p>
+                        <ol>
+                            <li><strong>Pick a pilot module.</strong> Choose a driver or parser with frequent bugs.</li>
+                            <li><strong>Bridge the languages.</strong> Use <code>cbindgen</code> to generate C headers from Rust libraries and link them.</li>
+                            <li><strong>Measure success.</strong> Compare binary size, performance, and bug rate; collect hard data.</li>
+                            <li><strong>Expand carefully.</strong> Move to drivers, comms stacks, and eventually safety-critical logic as confidence grows.</li>
+                        </ol>
+
+                        <h6>Why Now Matters</h6>
+                        <p>The missing pieces for Embedded Rust have arrived: stable HAL traits, async frameworks, and reliable flashing/debugging tools.
+                        Companies are shipping Rust firmware and talent is entering the market. If your organisation still runs on a large C codebase,
+                        2025 is the year to pilot Rust: start small, measure results, and build confidence.</p>
+
+                        <p class="mb-0"><em>The firmware world doesn’t stand still. Neither should we.</em></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Add more blog post cards here -->
+    </div>
+
+    <!-- LightWidget WIDGET -->
+    <div style="display: flex; justify-content: center; margin-top: 20px;">
+        <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
+        <iframe src="//lightwidget.com/widgets/a209ab7c241a52af929c55880933a084.html" scrolling="no"
+            allowtransparency="true" class="lightwidget-widget"
+            style="width:50%; height:500px; border:0; overflow:hidden;"></iframe>
+    </div>
 
     <a href="#" class="btn btn-dark btn-lg" id="scrollTop" role="button"
         style="position: fixed; bottom: 20px; right: 20px; display: none;"><i class="fas fa-arrow-up"></i></a>
@@ -248,6 +347,7 @@
 
         themeToggle.addEventListener('click', switchTheme, false);
     </script>
+
 </body>
 
 </html>
